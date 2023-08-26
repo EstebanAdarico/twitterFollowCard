@@ -8,12 +8,10 @@ function App() {
       <section className='App'>
          {/* haciendo un del rest operator o spread operator */}
          {/* lo que esta haciendo es pasar cada una de las porpiedades del objeto como  prop al componente TwitterFollowCard  */}
-         <TwitterFollowCard username='esteban' initialIsFollow = {true} >
+         <TwitterFollowCard username='estebanadarico' initialIsFollow = {true} >
             esteban
          </TwitterFollowCard>      
-         <TwitterFollowCard  username='midudev'>
-            midudev
-         </TwitterFollowCard>
+         
 
          <TwitterFollowCard  username='pedro'>
             pedro

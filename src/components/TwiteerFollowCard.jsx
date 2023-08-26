@@ -6,7 +6,7 @@ const TwitterFollowCard = ({children , username ,initialIsFollow}) => {
    
    const [isFollowing, setisFollowing] = useState(initialIsFollow)
    // guardando una condicional para guardar el cambio del nombre del boton 
-   const text = isFollowing ? 'siguiendo':'seguri'
+   const text = isFollowing ? 'siguiendo':'seguir'
    // dependendiendo del estado ,cambiara de color
    const buttoClassColor = isFollowing ? 'tw-followCard-button is-following':'tw-followCard-button' 
 
@@ -30,7 +30,7 @@ const TwitterFollowCard = ({children , username ,initialIsFollow}) => {
          </header>
          <aside>
             <button onClick={handleClick} className={buttoClassColor}>
-               <span className="tw-followcard-text" >{text}</span>
+               <span className="tw-followCard-text" >{text}</span>
                <span className="tw-followCard-stopFollow"> Dejar de Seguir</span>
             </button>
          </aside>
